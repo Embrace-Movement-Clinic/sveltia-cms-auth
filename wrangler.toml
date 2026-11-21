@@ -1,3 +1,10 @@
 name = "sveltia-cms-auth"
 main = "src/index.js"
 compatibility_date = "2026-11-11"
+
+# Settings for the Embrace Movement Clinic website editor (/admin). Kept here so a redeploy from
+# this repository keeps them: anything set only in the Cloudflare dashboard is removed on deploy.
+# Not secret. GITHUB_CLIENT_SECRET stays a Cloudflare secret and is never written here.
+[vars]
+ALLOWED_DOMAINS = "www.embracemovementclinic.com.au, embracemovementclinic-7at.pages.dev, *.embracemovementclinic-7at.pages.dev"
+GITHUB_CLIENT_ID = "Iv23lilajUMFJVws4tvG"
